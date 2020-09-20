@@ -6,27 +6,27 @@ Most implementations of IMAP support multiple logins; this allows the end user t
 
 Even though IMAP has an authentication mechanism, the authentication process can easily be circumvented by anyone who knows how to steal a password by using a protocol analyzer because the client’s username and password are transmitted as clear text. In an Exchange Server environment, administrators can work around this security flaw by using Secure Sockets Layer (SSL) encryption for IMAP.
 
-<u>EMIAL PROTOCOLS:</u><br>
+<h1><u>EMIAL PROTOCOLS:</u></h1><br>
 The Internet Message Access Protocol is an Application Layer Internet protocol that allows an e-mail client to access email on a remote mail server. The current version is defined by RFC 3501. An IMAP server typically listens on well-known port 143, while IMAP over SSL (IMAPS) uses 993.
 
 Incoming email messages are sent to an email server that stores messages in the recipient's email box. The user retrieves the messages with an email client that uses one of a number of email retrieval protocols. While some clients and servers preferentially use vendor-specific, proprietary protocols,almost all support POP and IMAP for retrieving email – allowing many free choice between many e-mail clients such as Pegasus Mail or Mozilla Thunderbird to access these servers, and allows the clients to be used with other servers.
 
 Email clients using IMAP generally leave messages on the server until the user explicitly deletes them. This and other characteristics of IMAP operation allow multiple clients to manage the same mailbox. Most email clients support IMAP in addition to Post Office Protocol (POP) to retrieve messages.IMAP offers access to the mail storage. Clients may store local copies of the messages, but these are considered to be a temporary cache.
-<u>HISTORY:</u><br>
+<h1><u>HISTORY:</u></h1><br>
 IMAP was designed by Mark Crispin in 1986 as a remote access mailbox protocol, in contrast to the widely used POP, a protocol for simply retrieving the contents of a mailbox.
 
 It went through a number of iterations before the current VERSION 4rev1 (IMAP4), as detailed below:
 
-Original IMAP:<br>
+<br>Original IMAP:<br>
 The original Interim Mail Access Protocol was implemented as a Xerox Lisp machine client and a TOPS-20 server.
 
 No copies of the original interim protocol specification or its software exist. Although some of its commands and responses were similar to IMAP2, the interim protocol lacked command/response tagging and thus its syntax was incompatible with all other versions of IMAP.
 
-IMAP2:<br>
+<br>IMAP2:<br>
 The interim protocol was quickly replaced by the Interactive Mail Access Protocol (IMAP2), defined in RFC 1064 (in 1988) and later updated by RFC 1176 (in 1990). IMAP2 introduced the command/response tagging and was the first publicly distributed version.
 
-IMAP3:<br>	
-IMAP3 is an extremely rare variant of IMAP. It was published as RFC 1203 in 1991. It was written specifically as a counter proposal to RFC 1176, which itself proposed modifications to IMAP2.[8] IMAP3 was never accepted by the marketplace.[9][10] The IESG reclassified RFC1203 "Interactive Mail Access Protocol - Version 3" as a Historic protocol in 1993. The IMAP Working Group used RFC1176 (IMAP2) rather than RFC1203 (IMAP3) as its starting point.[11][12]
+<br>IMAP3:<br>	
+IMAP3 is an extremely rare variant of IMAP. It was published as RFC 1203 in 1991. It was written specifically as a counter proposal to RFC 1176, which itself proposed modifications to IMAP2.IMAP3 was never accepted by the marketplace.The IESG reclassified RFC1203 "Interactive Mail Access Protocol - Version 3" as a Historic protocol in 1993. The IMAP Working Group used RFC1176 (IMAP2) rather than RFC1203 (IMAP3) as its starting point.
 
-IMAP2:<br>	
+<br>IMAP2:<br>	
 With the advent of MIME, IMAP2 was extended to support MIME body structures and add mailbox management functionality (create, delete, rename, message upload) that was absent from IMAP2. This experimental revision was called IMAP2bis; its specification was never published in non-draft form. An internet draft of IMAP2bis was published by the IETF IMAP Working Group in October 1993. This draft was based upon the following earlier specifications: unpublished IMAP2bis.TXT document, RFC1176, and RFC1064 (IMAP2).[13] The IMAP2bis.TXT draft documented the state of extensions to IMAP2 as of December 1992.[14] Early versions of Pine were widely distributed with IMAP2bis support[7] (Pine 4.00 and later supports IMAP4rev1).
